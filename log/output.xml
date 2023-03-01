@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.10 on win32)" generated="20230111 03:38:34.547" rpa="false" schemaversion="3">
+<suite id="s1" name="TableDemo" source="C:\Users\chandra\PycharmProjects\Automation\Tests\TableDemo.robot">
+<test id="s1-t1" name="Handling Table Contents" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230111 03:38:34.794" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg timestamp="20230111 03:38:34.822" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230111 03:38:34.822" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230111 03:38:34.794" endtime="20230111 03:38:34.825"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.826" endtime="20230111 03:38:34.826"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.826" endtime="20230111 03:38:34.827"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>//table[@name='BookTable']/tbody/tr/td[1]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.827" endtime="20230111 03:38:34.827"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${cols}</var>
+<arg>//table[@name='BookTable']/tbody/tr[2]/td</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.827" endtime="20230111 03:38:34.827"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.827" endtime="20230111 03:38:34.827"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${cols}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.827" endtime="20230111 03:38:34.827"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230111 03:38:34.827" endtime="20230111 03:38:34.827"/>
+</kw>
+<status status="FAIL" starttime="20230111 03:38:34.794" endtime="20230111 03:38:34.827">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20230111 03:38:34.547" endtime="20230111 03:38:34.827"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TableDemo">TableDemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
