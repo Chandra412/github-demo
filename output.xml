@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220520 14:06:27.825" rpa="false" schemaversion="3">
+<suite id="s1" name="TC002" source="C:\Users\chandra\PycharmProjects\PP\TestSuite\TC002.robot">
+<test id="s1-t1" name="Nop Commerce Test Case" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220520 14:06:28.006" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20220520 14:06:28.006" endtime="20220520 14:06:30.993"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220520 14:06:30.994" endtime="20220520 14:06:31.118"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220520 14:06:34.132" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220520 14:06:31.119" endtime="20220520 14:06:34.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220520 14:06:34.133" level="INFO">Clicking element 'xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220520 14:06:34.133" endtime="20220520 14:06:35.530"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${var}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220520 14:06:35.560" level="INFO">Element '//*[@id="Email"]' is displayed.</msg>
+<status status="PASS" starttime="20220520 14:06:35.530" endtime="20220520 14:06:35.560"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${var}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220520 14:06:35.560" endtime="20220520 14:06:35.580"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="Email"]</arg>
+<arg>chandra@epam.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220520 14:06:35.580" level="INFO">Typing text 'chandra@epam.com' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20220520 14:06:35.580" endtime="20220520 14:06:35.647"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="Password"]</arg>
+<arg>pass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220520 14:06:35.648" level="INFO">Typing text 'pass' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20220520 14:06:35.648" endtime="20220520 14:06:35.713"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220520 14:06:38.724" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220520 14:06:35.713" endtime="20220520 14:06:38.724"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220520 14:06:38.725" endtime="20220520 14:06:40.867"/>
+</kw>
+<status status="PASS" starttime="20220520 14:06:28.005" endtime="20220520 14:06:40.868"/>
+</test>
+<status status="PASS" starttime="20220520 14:06:27.826" endtime="20220520 14:06:40.873"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC002">TC002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
